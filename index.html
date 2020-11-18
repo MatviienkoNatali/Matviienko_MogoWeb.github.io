@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 	<title>MoGo</title>
 </head>
 <body>
@@ -35,8 +36,7 @@
 			</div>
 		</div>
 	</header>
-	<a href="#" name="home"></a>
-	<section class="welcome">
+	<section class="welcome" id="home">
 		<div class="container">
 			<div class="firstTitle">
 				<h2 class="supTitle">Creative Template</h2>
@@ -63,8 +63,7 @@
 			</div>
 		</div>
 	</section>
-	<section  class="about-us">
-		<a href="#" name="about"></a>
+	<section  class="about-us" id="about">
 		<div class="container">
 			<div class="title">
 				<h4>What we do</h4>
@@ -104,37 +103,30 @@
 		</div>
 	</section>
 	<section class="statistic">
-		<div class="container statistic-bl">
-			<hr>
-			<div class="block"  >
-				<p class="number">42</p>
-				<p class="static-text">Web Design Projects</p>
-			</div>
-			<hr>
-			<div class="block">
-				<p class="number">123</p>
-				<p class="static-text">happy client</p>
-			</div>
-			<hr>
-			<div class="block">
-				<p class="number">15</p>
-				<p class="static-text">award winner</p>
-			</div>
-			<hr>
-			<div class="block">
-				<p class="number">99</p>
-				<p class="static-text">cup of coffee</p>
-			</div>
-			<hr>
-			<div class="block">
-				<p class="number">24</p>
-				<p class="static-text">members</p>
-			</div>
-			<hr>
-		</div>
+		<ul class="container statistic-bl">
+			<li class="block"  >
+				<b class="number">42</b>
+				<span class="static-text">Web Design Projects</span>
+			</li>
+			<li class="block">
+				<b class="number">123</b>
+				<span class="static-text">happy client</span>
+			</li>
+			<li class="block">
+				<b class="number">15</b>
+				<span class="static-text">award winner</span>
+			</li>
+			<li class="block">
+				<b class="number">99</b>
+				<span class="static-text">cup of coffee</span>
+			</li>
+			<li class="block">
+				<b class="number">24</b>
+				<span class="static-text">members</span>
+			</li>
+		</ul>
 	</section>
-	<section class="services">
-		<a href="#" name="service"></a>
+	<section class="services" id="service">
 		<div class="container">
 			<div class="title">
 				<h4>We work with</h4>
@@ -142,23 +134,23 @@
 			</div>
 			<div class="services-cards">
 				<div class="services-card">
-				<img src="img/services/photography.png">
+				<img src="img/services/photography.png" alt="Photography">
 				<div class="bl">
-					<p class="card-title">Photography</p>
+					<h5 class="card-title">Photography</h5>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
 				</div>
 				</div>
 				<div class="services-card">
-					<img src="img/services/webdesign.png">
+					<img src="img/services/webdesign.png" alt="Web Design">
 					<div class="bl">
-						<p class="card-title">Web Design</p>
+						<h5 class="card-title">Web Design</h5>
 						<p>Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm</p>
 					</div>
 				</div>
 				<div class="services-card">
-					<img src="img/services/creativity.png">
+					<img src="img/services/creativity.png" alt="Creativity">
 					<div class="bl">
-						<p class="card-title">Creativity</p>
+						<h5 class="card-title">Creativity</h5>
 						<p>Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tem</p>
 					</div>
 				</div>
@@ -166,23 +158,23 @@
 			<hr noshade>
 			<div class="services-cards">
 				<div class="services-card">
-				<img src="img/services/seo.png">
+				<img src="img/services/seo.png" alt="seo">
 				<div class="bl">
-					<p class="card-title">seo</p>
+					<h5 class="card-title">seo</h5>
 					<p>Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm</p>
 				</div>
 				</div>
 				<div class="services-card">
-					<img src="img/services/css-html.png">
+					<img src="img/services/css-html.png" alt="Css/Html">
 					<div class="bl">
-						<p class="card-title">Css/Html</p>
+						<h5 class="card-title">Css/Html</h5>
 						<p>Lorem dolor sit amet, consectetur adipiscing elit, sed do tempo</p>
 					</div>
 				</div>
 				<div class="services-card">
-					<img src="img/services/digital.png">
+					<img src="img/services/digital.png" alt="digital">
 					<div class="bl">
-						<p class="card-title">digital</p>
+						<h5 class="card-title">digital</h5>
 						<p>Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
 					</div>
 				</div>
@@ -219,7 +211,7 @@
 					<div class="accordion">
 						<div class="accordion-bl accordion-active ">
 							<img src="img/we-do/photography.png" alt="photography">
-							<p class="accordion-title">Photography</p>
+							<h5 class="accordion-title">Photography</h5>
 						</div>
 						<p class="accordion-text active" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -227,14 +219,14 @@
 					<div class="accordion">
 						<div class="accordion-bl">
 							<img src="img/we-do/creativity.png" alt="creativity">
-							<p class="accordion-title">creativity</p>
+							<h5 class="accordion-title">creativity</h5>
 						</div>
 						<p class="accordion-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 					</div>
 					<div class="accordion">
 						<div class="accordion-bl">
 							<img src="img/we-do/webdesing.png" alt="webdesing">
-							<p class="accordion-title">web design</p>
+							<h5 class="accordion-title">web design</h5>
 						</div>
 						<p class="accordion-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 					</div>
@@ -250,7 +242,7 @@
 				<img class="comment-icon" src="img/sms.png" alt="sms">
 				<div>
 					<p class="comment-text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</p>
-					<p class="comment-name">Jon Doe</p>
+					<span class="comment-name">Jon Doe</span>
 				</div>
 			</div>
 		</div>
@@ -315,18 +307,17 @@
 	</section>
 	<section class="logos">
 		<div class="container">
-			<div class="logo-img">
-				<img src="img/logos/logo1.png" alt="logo1">
-				<img src="img/logos/logo2.png" alt="logo2">
-				<img src="img/logos/logo3.png" alt="logo3">
-				<img src="img/logos/logo4.png" alt="logo4">
-				<img src="img/logos/logo5.png" alt="logo5">
-				<img src="img/logos/logo6.png" alt="logo6">
-			</div>
+			<ul class="logo-img">
+				<li><a href="#"><img src="img/logos/logo1.png" alt="logo1"></a></li>
+				<li><a href="#"><img src="img/logos/logo2.png" alt="logo2"></a></li>
+				<li><a href="#"><img src="img/logos/logo3.png" alt="logo3"></a></li>
+				<li><a href="#"><img src="img/logos/logo4.png" alt="logo4"></a></li>
+				<li><a href="#"><img src="img/logos/logo5.png" alt="logo5"></a></li>
+				<li><a href="#"><img src="img/logos/logo6.png" alt="logo6"></a></li>
+			</ul>
 		</div>
 	</section>
-	<section class="work">
-		<a href="#" name="work"></a>
+	<section class="work" id="work">
 		<div class="container">
 			<div class="title">
 				<h4>What we do</h4>
@@ -411,7 +402,7 @@
 				<img class="comm-img" src="img/comment-img.jpg" alt="sms">
 				<div class="comment-text">
 					<p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</p>
-					<p class="comment-name">Joshua Earle</p>
+					<span class="comment-name">Joshua Earle</span>
 				</div>
 			</div>
 		</div>
@@ -428,8 +419,8 @@
 						<img src="img/reviews/Matthew-Dix.jpg" alt="Matthew-Dix">
 					</div>
 					<div class="review-bl">
-						<p class="name">Matthew Dix</p>
-						<p class="review-position">Graphic Design</p>
+						<h5 class="name">Matthew Dix</h5>
+						<h6 class="review-position">Graphic Design</h6>
 						<p class="review-coment">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
 					</div>
 				</div>
@@ -438,8 +429,8 @@
 						<img src="img/reviews/Nick-Karvounis.jpg" alt="Nick-Karvounis">
 					</div>
 					<div class="review-bl">
-						<p class="name">Nick Karvounis</p>
-						<p class="review-position">Graphic Design</p>
+						<h5 class="name">Nick Karvounis</h5>
+						<h6 class="review-position">Graphic Design</h6>
 						<p class="review-coment">Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 					</div>
 				</div>
@@ -448,8 +439,8 @@
 						<img src="img/reviews/Jaelynn-Castillo.jpg" alt="Jaelynn-Castillo">
 					</div>
 					<div class="review-bl">
-						<p class="name">Jaelynn Castillo</p>
-						<p class="review-position">Graphic Design</p>
+						<h5 class="name">Jaelynn Castillo</h5>
+						<h6 class="review-position">Graphic Design</h6>
 						<p class="review-coment">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 					</div>
 				</div>
@@ -458,16 +449,15 @@
 						<img src="img/reviews/Mike-Petrucci.jpg" alt="Mike-Petrucci">
 					</div>
 					<div class="review-bl">
-						<p class="name">Mike Petrucci</p>
-						<p class="review-position">Graphic Design</p>
+						<h5 class="name">Mike Petrucci</h5>
+						<h6 class="review-position">Graphic Design</h6>
 						<p class="review-coment">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section class="blog">
-		<a href="#" name="blog"></a>
+	<section class="blog" id="blog">
 		<div class="container">
 			<div class="title">
 				<h4>Our stories</h4>
@@ -477,52 +467,52 @@
 				<div class="blog-block">
 				<div class="blog-img img-1">
 					<div class="date">
-						<p class="number">15</p>
-						<p class="month">Jan</p>
+						<span class="number">15</span>
+						<span class="month">Jan</span>
 					</div>
 				</div>
-				<p class="blog-title">Lorem ipsum dolor sit amet</p>
+				<h5 class="blog-title">Lorem ipsum dolor sit amet</h5>
 				<p class="blog-text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
 				<hr>
 				<div class="icons">
 					<img src="img/blog/view.png" alt="view">
-					<p>542</p>
+					<span>542</span>
 					<img src="img/blog/speech.png" alt="speech">
-					<p>17</p>
+					<span>17</span>
 				</div>
 			</div>
 			<div class="blog-block">
 				<div class="blog-img img-2">
 					<div class="date">
-						<p class="number">14</p>
-						<p class="month">Jan</p>
+						<span class="number">14</span>
+						<span class="month">Jan</span>
 					</div>
 				</div>
-				<p class="blog-title">sed do eiusmod tempor</p>
+				<h5 class="blog-title">sed do eiusmod tempor</h5>
 				<p class="blog-text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
 				<hr>
 				<div class="icons">
 					<img src="img/blog/view.png" alt="view">
-					<p>992</p>
+					<span>992</span>
 					<img src="img/blog/speech.png" alt="speech">
-					<p>42</p>
+					<span>42</v>
 				</div>
 			</div>
 			<div class="blog-block">
 				<div class="blog-img img-3">
 					<div class="date">
-						<p class="number">12</p>
-						<p class="month">Jan</p>
+						<span class="number">12</span>
+						<span class="month">Jan</span>
 					</div>
 				</div>
-				<p class="blog-title">incididunt ut labore et dolore</p>
+				<h5 class="blog-title">incididunt ut labore et dolore</h5>
 				<p class="blog-text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
 				<hr>
 				<div class="icons">
 					<img src="img/blog/view.png" alt="view">
-					<p>1560</p>
+					<span>1560</span>
 					<img src="img/blog/speech.png" alt="speech">
-					<p>98</p>
+					<span>98</span>
 				</div>
 			</div>
 			</div>
@@ -537,18 +527,17 @@
 			<a class="map-link" target="_blank" href="https://goo.gl/maps/TSJLAThHaPFcyFd27">Open map</a>
 		</div>
 	</section>
-	<section class="footer">
-		<a href="#" name="contact"></a>
+	<section class="footer" id="contact">
 		<div class="container">
 			<div class="footer-contact">
 				<div class="send">
-					<p class="send-title">MoGo</p>
+					<span class="send-title">MoGo</span>
 					<p class="send-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 					</p>
 					<p class="send-txt"><span>15k</span> followers</p>
 					<hr>
 					<div class="follow">
-						<p>Follow Us:</p>
+						<span>Follow Us:</span>
 						<a href=#><img src="img/footer/icon/facebook.png" alt="facebook"></a>
 						<a href="#"><img src="img/footer/icon/twitter.png" alt="twitter"></a>
 						<a href="#"><img src="img/footer/icon/instagram.png" alt="instagram"></a>
@@ -564,7 +553,7 @@
 					</form>
 				</div>
 				<div class="blogs">
-					<p class="blogs-title">blogs</p>
+					<h5 class="blogs-title">blogs</h5>
 					<div class="blogs-block">
 						<div class="blocks">
 							<img src="img/footer/blogs/1.png" alt="footer-blogs">
@@ -590,7 +579,7 @@
 					</div>
 				</div>
 				<div class="footer-instagram">
-					<p class="instagram-title">instagram</p>
+					<h5 class="instagram-title">instagram</h5>
 					<div class="fotos">
 						<img src="img/footer/instagram/1.png" alt="instagram-foto">
 						<img src="img/footer/instagram/2.png" alt="instagram-foto">
