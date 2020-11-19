@@ -91,19 +91,54 @@ hr{
 
 	/* welcome */
 
-.welcome{
+	/* Slider */
+
+.slider-active{
+	visibility: hidden;
+	height: 0;
+	opacity: 0;
+	-webkit-transition: opacity 1s, visibility 1s;
+	-moz-transition: opacity 1s, visibility 1s;
+	-o-transition: opacity 1s, visibility 1s;
+	transition: opacity 1s, visibility 1s;
+	
+
+}
+.showing{
+	visibility: visible;
+	opacity: 1;
+}
+.showing, .welcome, .welcome-work, 
+.welcome-about, .welcome-contact{
+	color: #fff;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	height: 100vh;
-
+}
+.welcome{
 	background: url(../img/intro.jpg) center no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
+.welcome-work{
+	background: url(../img/wlcome-work.jpg) center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.welcome-about{
+	background: url(../img/wlcome-about.jpg) center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.welcome-contact{
+	background: url(../img/wlcome-contact.jpg) center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
 .firstTitle{
-	color: #fff;
 	text-align: center;
 	width: 100%;
 	max-width: 880px;
@@ -126,6 +161,9 @@ hr{
 	height: 3px;
 	background: #fff;
 	margin: 50px auto;
+}
+.mainTitle span{
+	font-size: 48px;
 }
 
 	/* Button */
@@ -163,7 +201,7 @@ hr{
 	padding: 10px 0;
 	position: relative;
 	border-top: 3px solid #fff;
-	opacity: .6;
+	opacity: .4;
 	font-size: 18px;
 	color: #fff;
 	text-transform: uppercase;
@@ -511,18 +549,20 @@ h3:after{
 	display: flex;
 	align-items: center;
 }
+
 .block-comment{
 	display: flex;
 	margin: 0 auto;
 	position: relative;
-}
-.block-comment {
+
 	font-family: 'Roboto', sans-serif;
 	font-weight: 200;
 	font-style: italic;
 	color: #999;
 	font-size: 24px;
+
 }
+
 .comment-text{
 	display: flex;
 	flex-direction: column;
@@ -552,7 +592,7 @@ h3:after{
 .comm{
 	position: relative;
 }
-.left:after, .right:before{
+.left, .right{
 	content: "";
 	display: block;
 	width: 15px;
@@ -564,13 +604,14 @@ h3:after{
 	top: 50%;
 	z-index: 2;
 }
-.left:after{
+.left{
 	transform: translateY(-50%)
 	rotate(45deg);
 	margin-top: 5px;
 	right: -80px;
+	cursor: pointer;
 }
-.right:before{
+.right{
 	transform: translateY(-50%)
 	rotate(-135deg);
 	margin-top: 5px;
