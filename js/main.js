@@ -1,5 +1,18 @@
 $(document).ready(function(){
 
+
+	var slides = document.querySelectorAll('.slider-active');
+	var currentSlide = 0;
+	var slideInterval = setInterval(welcomeSlide,5000);
+
+	function welcomeSlide(){
+	slides[currentSlide].className = 'slider-active';
+	currentSlide = (currentSlide+1)%slides.length;
+	slides[currentSlide].className = 'slider-active showing';
+	};
+
+
+
 	$('.accordion-bl').on('click', function(){
 		//скрываем все кроме того, что должны открыть
 		$('.accordion-bl').removeClass('accordion-active');
@@ -9,7 +22,8 @@ $(document).ready(function(){
 		// открываем или скрываем блок под заголовком, по которому кликнули
 		$(this).next().slideDown(300);
 	});
- 
+
+
 
 
 var show = true;
